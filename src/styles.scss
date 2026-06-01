@@ -231,7 +231,7 @@ main {
 .menu-page {
 	min-height: 100vh;
 	padding: 60px 20px;
-	background:$brand;
+	background: $brand;
 	color: #fff;
 	font-family: 'Inter', sans-serif;
 }
@@ -277,7 +277,7 @@ main {
 
 
 .menu-card {
-	background:  radial-gradient(circle at top, #141414, #0b0b0b);
+	background: radial-gradient(circle at top, #141414, #0b0b0b);
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	border-radius: 18px;
 	padding: 20px;
@@ -304,6 +304,10 @@ main {
 			opacity: 1;
 		}
 	}
+
+	img {
+		width: 100%;
+	}
 }
 
 
@@ -312,6 +316,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 12px;
+
 }
 
 
@@ -573,5 +578,155 @@ h2 {
 
 	.service-options {
 		flex-direction: column;
+	}
+}
+
+
+
+
+//-----------NOSOTROS
+
+.about {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #f6f6f6;
+
+	.nosotros {}
+
+	.containerBlock {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-color: #f6f6f6;
+
+		.notDev {
+			background: rgba(255, 255, 255, 0.06);
+			padding: 4rem 0;
+
+			.imgNotdev {
+				display: grid;
+				grid-template-columns: 35% 65%;
+				width: 100%;
+				justify-content: space-between;
+				align-items: center;
+
+				span {
+
+
+					h4 {
+						font-size: 2.5rem;
+						font-style: normal;
+						font-weight: 700;
+						line-height: 2.625em;
+						font-family: ArchiaBold !important;
+						color: $brand-light;
+					}
+				}
+			}
+
+			.textFootNotDev {
+
+				margin: auto;
+
+				p {
+					line-height: 1.5rem;
+					font-size: 22px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 34px;
+				}
+
+				span {
+					margin-top: 15%;
+
+					h4 {}
+				}
+
+				img {
+					width: 50%;
+				}
+
+				h2 {
+					position: absolute;
+					top: 2rem;
+					width: 40%;
+				}
+			}
+		}
+
+		.team {
+			width: 100%;
+			padding: 2rem;
+
+			h2 {
+				width: 100%;
+				color: $brand-light;
+				margin: auto;
+
+				.card {
+					padding: 1rem 0;
+
+					.card-text {
+						h4 {
+							padding-right: 1rem;
+						}
+					}
+				}
+			}
+
+			.cardTeam {
+				width: 100%;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+				gap: 2rem;
+				padding: 2rem;
+				max-width: 1200px;
+				margin: 0 auto;
+
+				.card {
+					background: #fff;
+					border-radius: 1rem;
+					overflow: hidden;
+					box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+					transition: transform 0.25s ease, box-shadow 0.25s ease;
+					display: flex;
+					flex-direction: column;
+
+					.card-content {
+						padding: 1.2rem;
+
+						h4 {
+							margin: 0 0 0.5rem;
+							font-size: 1.1rem;
+							color: #222;
+						}
+
+						p {
+							font-size: 0.95rem;
+							line-height: 1.5;
+							color: #555;
+						}
+					}
+
+					img {
+						width: 100%;
+						aspect-ratio: 2 / 1;
+						object-fit: contain;
+						background: #f5f5f5;
+						/* opcional para rellenar espacios */
+						display: block;
+					}
+				}
+
+				.card:hover {
+					transform: translateY(-6px);
+					box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+				}
+
+
+
+			}
+		}
 	}
 }

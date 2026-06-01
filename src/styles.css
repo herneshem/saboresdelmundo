@@ -251,6 +251,9 @@ main {
 .menu-card:hover::before {
   opacity: 1;
 }
+.menu-card img {
+  width: 100%;
+}
 
 .menu-card__head {
   display: flex;
@@ -486,4 +489,115 @@ h2 {
   .service-options {
     flex-direction: column;
   }
+}
+.about {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #f6f6f6;
+}
+.about .containerBlock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+}
+.about .containerBlock .notDev {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 4rem 0;
+}
+.about .containerBlock .notDev .imgNotdev {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .containerBlock .notDev .imgNotdev span h4 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.625em;
+  font-family: ArchiaBold !important;
+  color: rgb(96.7443181818, 172.4318181818, 95.3681818182);
+}
+.about .containerBlock .notDev .textFootNotDev {
+  margin: auto;
+}
+.about .containerBlock .notDev .textFootNotDev p {
+  line-height: 1.5rem;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+}
+.about .containerBlock .notDev .textFootNotDev span {
+  margin-top: 15%;
+}
+.about .containerBlock .notDev .textFootNotDev img {
+  width: 50%;
+}
+.about .containerBlock .notDev .textFootNotDev h2 {
+  position: absolute;
+  top: 2rem;
+  width: 40%;
+}
+.about .containerBlock .team {
+  width: 100%;
+  padding: 2rem;
+}
+.about .containerBlock .team h2 {
+  width: 100%;
+  color: rgb(96.7443181818, 172.4318181818, 95.3681818182);
+  margin: auto;
+}
+.about .containerBlock .team h2 .card {
+  padding: 1rem 0;
+}
+.about .containerBlock .team h2 .card .card-text h4 {
+  padding-right: 1rem;
+}
+.about .containerBlock .team .cardTeam {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about .containerBlock .team .cardTeam .card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+.about .containerBlock .team .cardTeam .card .card-content {
+  padding: 1.2rem;
+}
+.about .containerBlock .team .cardTeam .card .card-content h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: #222;
+}
+.about .containerBlock .team .cardTeam .card .card-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+.about .containerBlock .team .cardTeam .card img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background: #f5f5f5;
+  /* opcional para rellenar espacios */
+  display: block;
+}
+.about .containerBlock .team .cardTeam .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }/*# sourceMappingURL=styles.css.map */
